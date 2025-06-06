@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumor Detection - U2Net</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tumor Detection using U2Net</h1>
+        
+        <div class="upload-container">
+            <form id="upload-form">
+                <div class="file-input-wrapper">
+                    <input type="file" id="image-input" accept="image/*" required>
+                    <label for="image-input" class="file-label">
+                        Choose an image
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Detect Tumor</button>
+            </form>
+        </div>
+
+        <div class="results-container">
+            <div class="image-container">
+                <h3>Original Image</h3>
+                <img id="original-image" src="" alt="Original image will appear here">
+            </div>
+            <div class="image-container">
+                <h3>Tumor Mask</h3>
+                <img id="mask-image" src="" alt="Tumor mask will appear here">
+            </div>
+            <div class="image-container">
+                <h3>Overlay Result</h3>
+                <img id="overlay-image" src="" alt="Overlay result will appear here">
+            </div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            Processing...
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>
