@@ -1,4 +1,4 @@
-# Tumor Segmentation Web App (U^2-Net + FastAPI)
+# Tumor Segmentation Web App (U2-Net + FastAPI)
 
 A simple web application for segmenting tumors in medical images using the **U²-Net** architecture. Built with **FastAPI**, **OpenCV**, and **PyTorch**.
 
