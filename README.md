@@ -2,7 +2,7 @@
 
 A simple web application for segmenting tumors in medical images using the **U²-Net** architecture. Built with **FastAPI**, **OpenCV**, and **PyTorch**.
 
-## 🚀 Features
+## Features
 
 - Upload an image and get:
   - Original image
@@ -11,12 +11,12 @@ A simple web application for segmenting tumors in medical images using the **U²
 - Runs prediction using pre-trained **U²-Net**
 - Web interface powered by **FastAPI** + **Jinja2 templates**
 
-## 🧠 Model
+## Model
 
 - Architecture: [U²-Net](https://arxiv.org/abs/2005.09007)
 - Trained on: [Kvasir-SEG Dataset](https://datasets.simula.no/kvasir-seg/)
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/yourusername/yourproject.git
